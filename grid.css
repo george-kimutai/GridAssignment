@@ -1,0 +1,86 @@
+#layout{
+  grid-template-areas:
+  "hdl hdc hdr"
+  "sb1 cnt sb2"
+  "ftl ftc ftr";
+  display: grid;
+  grid-template-rows:
+    [hdr] 100px
+    [cnt] auto
+    [ftr] 50px;
+ grid-template-columns:
+  [sb1] 0.5fr
+  [main] 2fr
+  [sb2] 0.5fr;
+
+  [hdl] 0.5fr [hdc] 2fr [hdr] 0.5fr; 
+  [ftl] 0.5fr [ftc] 2fr [ftr] 0.5fr; 
+
+
+}
+div{
+  color : maroon;
+  text-align: left;
+  font-size: 20px;
+  border: solid purple;
+}
+
+#header-right{
+  grid-area: hdr;
+  border-style: solid solid solid dashed;
+
+}
+
+#header-center {
+  grid-area: hdc;
+  border-style: solid dashed solid dashed;
+
+}
+
+#header-left {
+  grid-area: hdl;
+
+}
+
+
+#footer-right{
+
+  grid-area: ftr;
+  border-style: solid solid solid dashed;
+}
+
+#footer-left{
+  grid-area: ftl;
+  border-style: solid dashed solid solid;
+}
+
+#footer-center{
+grid-area: ftc;
+border-style: solid dashed solid dashed;
+
+}
+
+#one{
+  background-color: white;
+  grid-area: hdl;
+  border-color: purple;
+  border-style: solid dashed solid solid;
+}
+
+#two{
+  background-color: white;
+  grid-area: sb1;
+    border: solid purple;
+}
+#three{
+  background-color: white;
+  grid-area: cnt;
+  height: 60px;
+  border:solid purple;
+}
+#four{
+  background-color:white;
+  grid-area: sb2;
+    border: solid purple;
+}
+
